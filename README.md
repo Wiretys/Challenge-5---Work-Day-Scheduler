@@ -34,7 +34,3 @@ https://github.com/Wiretys/Work-Day-Scheduler---Challenge-5
 
 ## Contributer
 Rex Wilson
-
-![image](./assets/images/readmeimage.png)
-
-
