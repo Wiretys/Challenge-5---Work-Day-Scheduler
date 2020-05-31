@@ -1,4 +1,6 @@
-var currentDay = moment().format('dddd, MMMM Do YYYY');
+// var currentDay = moment().format('dddd, MMMM Do YYYY');
+var currentDay = moment();
+
 document.getElementById("currentDay").innerHTML = currentDay;
 
 var currentHour = moment();
@@ -25,6 +27,17 @@ if (nineAm.format("h") === currentHour.format("h")) {
     $("#nineAmText").addClass("present");
 };
 
+$("#nineAmText").click(function () {
+});
+$("#saveBtnClick").click(function () {
+    var nineAmTaskText = $("#nineAmText").val();
+    var nineAmTaskTextJSON = JSON.stringify(nineAmTaskText);
+    localStorage.setItem("nineAmTextLocalStorage", nineAmTaskTextJSON);
+});
+var loadText = function () {
+    nineAmTaskText = JSON.parse(localStorage.getItem("nineAmTextLocalStorage"));
+    document.getElementById("nineAmText").value = nineAmTaskText;
+};
 
 // var tenSet = new Date();
 // tenSet.setHours(10, 0, 0, 0);
@@ -32,46 +45,12 @@ if (nineAm.format("h") === currentHour.format("h")) {
 // document.getElementById("tenAm").innerHTML = tenAm;
 
 
-// refresh page every 15 minutes
-function reloadPage() {
-    setInterval(function () {
-        location.reload;
-    }, (15 * 60 * 1000));
-};
-
-$("#nineAmText").click(function () {
-
-});
-
-$("#saveBtnClick").click(function () {
-
-    var nineAmTaskText = $("#nineAmText").val();
-    var nineAmTaskTextJSON = JSON.stringify(nineAmTaskText);
-    localStorage.setItem("nineAmTextLocalStorage", nineAmTaskTextJSON);
-    
-});
-
-
-// var nineAmTaskText = JSON.parse(nineAmTaskTextJSON)
-
-var loadText = function () {
-    nineAmTaskText = JSON.parse(localStorage.getItem("nineAmTextLocalStorage"));
-    document.getElementById("nineAmText").value = nineAmTaskText;
-};
-
 loadText();
 
+// refresh page every 15 minutes
+    setTimeout (function() {
+        window.location.reload(1);
+    }, (15 * 60 * 1000));
 
 
 
-//   $(this).innerHTML = nineAmTaskText;
-
-//  return console.log(nineAmTaskText);
-
-// });
-
-// $("#nineAmText").on(function(){
-//     $("#fieldNine").change(function(){
-//       $(this).css("background-color", "#D6D6FF");
-//     });
-// });
