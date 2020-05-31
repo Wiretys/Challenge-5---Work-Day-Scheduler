@@ -40,22 +40,27 @@ function reloadPage() {
 };
 
 $("#nineAmText").click(function () {
-    var nineAmTaskText = prompt("Please enter a task.", "Call Client");
-    if (nineAmTaskText != null) {
-        document.getElementById("nineAmText").innerHTML = nineAmTaskText;
-        var nineAmTaskTextJSON = JSON.stringify(nineAmTaskText);
-        localStorage.setItem("nineAmTextLocalStorage", nineAmTaskTextJSON);
-    };
+
 });
+
+$("#saveBtnClick").click(function () {
+
+    var nineAmTaskText = $("#nineAmText").val();
+    var nineAmTaskTextJSON = JSON.stringify(nineAmTaskText);
+    localStorage.setItem("nineAmTextLocalStorage", nineAmTaskTextJSON);
+    
+});
+
 
 // var nineAmTaskText = JSON.parse(nineAmTaskTextJSON)
 
 var loadText = function () {
     nineAmTaskText = JSON.parse(localStorage.getItem("nineAmTextLocalStorage"));
-    document.getElementById("nineAmText").innerHTML = nineAmTaskText;
+    document.getElementById("nineAmText").value = nineAmTaskText;
 };
 
 loadText();
+
 
 
 
