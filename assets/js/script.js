@@ -19,16 +19,17 @@ if (moment(nineAm).isBefore(moment(currentHour))) {
 } else {
     $("#nineAmText").addClass("future");
 };
-if (moment(nineAm).isBefore(moment(currentHour))) {
-    $("#nineAmText").removeClass ("past");
-    $("#nineAmText").removeClass ("future");
+if (nineAm.format("h") === currentHour.format("h")) {
+    $("#nineAmText").removeClass("past");
+    $("#nineAmText").removeClass("future");
     $("#nineAmText").addClass("present");
 };
 
-var tenSet = new Date();
-tenSet.setHours(10, 0, 0, 0);
-var tenAm = moment(tenSet).format("hA");
-document.getElementById("tenAm").innerHTML = tenAm;
+
+// var tenSet = new Date();
+// tenSet.setHours(10, 0, 0, 0);
+// var tenAm = moment(tenSet).format("hA");
+// document.getElementById("tenAm").innerHTML = tenAm;
 
 
 // refresh page every 15 minutes
@@ -38,3 +39,21 @@ function reloadPage() {
     }, (15 * 60 * 1000));
 };
 
+$("#nineAmText").click(function () {
+    var nineAmTaskText = prompt("Please enter a task.", "Call Client");
+    if (nineAmTaskText != null) {
+        document.getElementById("nineAmText").innerHTML = nineAmTaskText;
+    };
+});
+
+//   $(this).innerHTML = nineAmTaskText;
+
+//  return console.log(nineAmTaskText);
+
+// });
+
+// $("#nineAmText").on(function(){
+//     $("#fieldNine").change(function(){
+//       $(this).css("background-color", "#D6D6FF");
+//     });
+// });
