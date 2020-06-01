@@ -28,9 +28,9 @@ Project was designed to advance knowledge of jQuery and Moment.js
 
 Links: 
 ```
-https://wiretys.github.io/Work-Day-Scheduler---Challenge-5/
+https://wiretys.github.io/Challenge-5---Work-Day-Scheduler/
 
-https://github.com/Wiretys/Work-Day-Scheduler---Challenge-5
+https://github.com/Wiretys/Challenge-5---Work-Day-Scheduler
 
 ## Contributer
 Rex Wilson
