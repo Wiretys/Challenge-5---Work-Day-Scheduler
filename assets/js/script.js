@@ -20,13 +20,13 @@ $(document).ready(function () {
     } else {
         $("#nineAmText").addClass("future");
     };
-    if (nineAm.format("h") === currentHour.format("h")) {
+    if (nineAm.format("h") === currentHour.format("h") && ninePm.format("A") === currentHour.format("A")) {
         $("#nineAmText").removeClass("past");
         $("#nineAmText").removeClass("future");
         $("#nineAmText").addClass("present");
     };
     // setup div event function
-    $("#nineAmText").click(function () {});
+    $("#nineAmText").click(function () { });
     // setup button to save to local storage
     $("#ninesaveBtnClick").click(function () {
         var nineAmTaskText = $("#nineAmText").val();
@@ -57,13 +57,13 @@ $(document).ready(function () {
     } else {
         $("#tenAmText").addClass("future");
     };
-    if (tenAm.format("h") === currentHour.format("h")) {
+    if (tenAm.format("h") === currentHour.format("h") && tenPm.format("A") === currentHour.format("A")) {
         $("#tenAmText").removeClass("past");
         $("#tenAmText").removeClass("future");
         $("#tenAmText").addClass("present");
     };
     // setup div event function
-    $("#tenAmText").click(function () {});
+    $("#tenAmText").click(function () { });
     // setup button to save to local storage
     $("#tensaveBtnClick").click(function () {
         var tenAmTaskText = $("#tenAmText").val();
@@ -94,13 +94,13 @@ $(document).ready(function () {
     } else {
         $("#elevenAmText").addClass("future");
     };
-    if (elevenAm.format("h") === currentHour.format("h")) {
+    if (elevenAm.format("h") === currentHour.format("h") && elevenPm.format("A") === currentHour.format("A")) {
         $("#elevenAmText").removeClass("past");
         $("#elevenAmText").removeClass("future");
         $("#elevenAmText").addClass("present");
     };
     // setup div event function
-    $("#elevenAmText").click(function () {});
+    $("#elevenAmText").click(function () { });
     // setup button to save to local storage
     $("#elevensaveBtnClick").click(function () {
         var elevenAmTaskText = $("#elevenAmText").val();
@@ -131,13 +131,13 @@ $(document).ready(function () {
     } else {
         $("#twelvePmText").addClass("future");
     };
-    if (twelvePm.format("h") === currentHour.format("h")) {
+    if (twelvePm.format("h") === currentHour.format("h") && twelvePm.format("A") === currentHour.format("A")) {
         $("#twelvePmText").removeClass("past");
         $("#twelvePmText").removeClass("future");
         $("#twelvePmText").addClass("present");
     };
     // setup div event function
-    $("#twelvePmText").click(function () {});
+    $("#twelvePmText").click(function () { });
     // setup button to save to local storage
     $("#twelvesaveBtnClick").click(function () {
         var twelvePmTaskText = $("#twelvePmText").val();
@@ -168,13 +168,13 @@ $(document).ready(function () {
     } else {
         $("#onePmText").addClass("future");
     };
-    if (onePm.format("h") === currentHour.format("h")) {
+    if (onePm.format("h") === currentHour.format("h") && onePm.format("A") === currentHour.format("A")) {
         $("#onePmText").removeClass("past");
         $("#onePmText").removeClass("future");
         $("#onePmText").addClass("present");
     };
     // setup div event function
-    $("#onePmText").click(function () {});
+    $("#onePmText").click(function () { });
     // setup button to save to local storage
     $("#onesaveBtnClick").click(function () {
         var onePmTaskText = $("#onePmText").val();
@@ -187,7 +187,7 @@ $(document).ready(function () {
         document.getElementById("onePmText").value = onePmTaskText;
     };
     oneloadText();
-    
+
     // set two pm
     var twoSet = new Date();
     twoSet.setHours(14, 0, 0, 0);
@@ -205,13 +205,13 @@ $(document).ready(function () {
     } else {
         $("#twoPmText").addClass("future");
     };
-    if (twoPm.format("h") === currentHour.format("h")) {
+    if (twoPm.format("h") === currentHour.format("h") && twoPm.format("A") === currentHour.format("A")) {
         $("#twoPmText").removeClass("past");
         $("#twoPmText").removeClass("future");
         $("#twoPmText").addClass("present");
     };
     // setup div event function
-    $("#twoPmText").click(function () {});
+    $("#twoPmText").click(function () { });
     // setup button to save to local storage
     $("#twosaveBtnClick").click(function () {
         var twoPmTaskText = $("#twoPmText").val();
@@ -242,13 +242,13 @@ $(document).ready(function () {
     } else {
         $("#threePmText").addClass("future");
     };
-    if (threePm.format("h") === currentHour.format("h")) {
+    if (threePm.format("h") === currentHour.format("h") && threePm.format("A") === currentHour.format("A")) {
         $("#threePmText").removeClass("past");
         $("#threePmText").removeClass("future");
         $("#threePmText").addClass("present");
     };
     // setup div event function
-    $("#threePmText").click(function () {});
+    $("#threePmText").click(function () { });
     // setup button to save to local storage
     $("#threesaveBtnClick").click(function () {
         var threePmTaskText = $("#threePmText").val();
@@ -279,13 +279,13 @@ $(document).ready(function () {
     } else {
         $("#fourPmText").addClass("future");
     };
-    if (fourPm.format("h") === currentHour.format("h")) {
+    if (fourPm.format("h") === currentHour.format("h") && fourPm.format("A") === currentHour.format("A")) {
         $("#fourPmText").removeClass("past");
         $("#fourPmText").removeClass("future");
         $("#fourPmText").addClass("present");
     };
     // setup div event function
-    $("#fourPmText").click(function () {});
+    $("#fourPmText").click(function () { });
     // setup button to save to local storage
     $("#foursaveBtnClick").click(function () {
         var fourPmTaskText = $("#fourPmText").val();
@@ -316,13 +316,13 @@ $(document).ready(function () {
     } else {
         $("#fivePmText").addClass("future");
     };
-    if (fivePm.format("h") === currentHour.format("h")) {
+    if (fivePm.format("h") === currentHour.format("h") && fivePm.format("A") === currentHour.format("A")) {
         $("#fivePmText").removeClass("past");
         $("#fivePmText").removeClass("future");
         $("#fivePmText").addClass("present");
     };
     // setup div event function
-    $("#fivePmText").click(function () {});
+    $("#fivePmText").click(function () { });
     // setup button to save to local storage
     $("#fivesaveBtnClick").click(function () {
         var fivePmTaskText = $("#fivePmText").val();
@@ -335,7 +335,7 @@ $(document).ready(function () {
         document.getElementById("fivePmText").value = fivePmTaskText;
     };
     fiveloadText();
-    
+
     // refresh page every 15 minutes
     setTimeout(function () {
         window.location.reload(1);
