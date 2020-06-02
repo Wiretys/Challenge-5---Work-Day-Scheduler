@@ -20,7 +20,7 @@ $(document).ready(function () {
     } else {
         $("#nineAmText").addClass("future");
     };
-    if (nineAm.format("h") === currentHour.format("h") && ninePm.format("A") === currentHour.format("A")) {
+    if (nineAm.format("hA") === currentHour.format("hA")) {
         $("#nineAmText").removeClass("past");
         $("#nineAmText").removeClass("future");
         $("#nineAmText").addClass("present");
@@ -57,7 +57,7 @@ $(document).ready(function () {
     } else {
         $("#tenAmText").addClass("future");
     };
-    if (tenAm.format("h") === currentHour.format("h") && tenPm.format("A") === currentHour.format("A")) {
+    if (tenAm.format("hA") === currentHour.format("hA")) {
         $("#tenAmText").removeClass("past");
         $("#tenAmText").removeClass("future");
         $("#tenAmText").addClass("present");
@@ -94,7 +94,7 @@ $(document).ready(function () {
     } else {
         $("#elevenAmText").addClass("future");
     };
-    if (elevenAm.format("h") === currentHour.format("h") && elevenPm.format("A") === currentHour.format("A")) {
+    if (elevenAm.format("hA") === currentHour.format("hA")) {
         $("#elevenAmText").removeClass("past");
         $("#elevenAmText").removeClass("future");
         $("#elevenAmText").addClass("present");
@@ -131,7 +131,7 @@ $(document).ready(function () {
     } else {
         $("#twelvePmText").addClass("future");
     };
-    if (twelvePm.format("h") === currentHour.format("h") && twelvePm.format("A") === currentHour.format("A")) {
+    if (twelvePm.format("hA") === currentHour.format("hA")) {
         $("#twelvePmText").removeClass("past");
         $("#twelvePmText").removeClass("future");
         $("#twelvePmText").addClass("present");
@@ -168,7 +168,7 @@ $(document).ready(function () {
     } else {
         $("#onePmText").addClass("future");
     };
-    if (onePm.format("h") === currentHour.format("h") && onePm.format("A") === currentHour.format("A")) {
+    if (onePm.format("hA") === currentHour.format("hA")) {
         $("#onePmText").removeClass("past");
         $("#onePmText").removeClass("future");
         $("#onePmText").addClass("present");
@@ -205,7 +205,7 @@ $(document).ready(function () {
     } else {
         $("#twoPmText").addClass("future");
     };
-    if (twoPm.format("h") === currentHour.format("h") && twoPm.format("A") === currentHour.format("A")) {
+    if (twoPm.format("hA") === currentHour.format("hA")) {
         $("#twoPmText").removeClass("past");
         $("#twoPmText").removeClass("future");
         $("#twoPmText").addClass("present");
@@ -242,7 +242,7 @@ $(document).ready(function () {
     } else {
         $("#threePmText").addClass("future");
     };
-    if (threePm.format("h") === currentHour.format("h") && threePm.format("A") === currentHour.format("A")) {
+    if (threePm.format("hA") === currentHour.format("hA")) {
         $("#threePmText").removeClass("past");
         $("#threePmText").removeClass("future");
         $("#threePmText").addClass("present");
@@ -279,7 +279,7 @@ $(document).ready(function () {
     } else {
         $("#fourPmText").addClass("future");
     };
-    if (fourPm.format("h") === currentHour.format("h") && fourPm.format("A") === currentHour.format("A")) {
+    if (fourPm.format("hA") === currentHour.format("hA")) {
         $("#fourPmText").removeClass("past");
         $("#fourPmText").removeClass("future");
         $("#fourPmText").addClass("present");
@@ -316,7 +316,7 @@ $(document).ready(function () {
     } else {
         $("#fivePmText").addClass("future");
     };
-    if (fivePm.format("h") === currentHour.format("h") && fivePm.format("A") === currentHour.format("A")) {
+    if (fivePm.format("hA") === currentHour.format("hA")) {
         $("#fivePmText").removeClass("past");
         $("#fivePmText").removeClass("future");
         $("#fivePmText").addClass("present");
